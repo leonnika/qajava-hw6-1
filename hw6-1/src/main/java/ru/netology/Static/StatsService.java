@@ -14,12 +14,10 @@ public class StatsService {
     // функция возвращает Среднюю сумму продаж в месяц
     public long findAverageSales(long[] monthsSumSales) {
         long sumSales = 0;
-        int numberMonths = 0;
         for (long monthSumSales : monthsSumSales) {
             sumSales += monthSumSales;
-            numberMonths = numberMonths + 1;
         }
-        long averageSales = sumSales / numberMonths;
+        long averageSales = sumSales / monthsSumSales.length;
         return averageSales;
     }
 
