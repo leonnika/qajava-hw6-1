@@ -1,10 +1,9 @@
 package ru.netology.Static;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 class StatsServiceTest {
 
     @org.junit.jupiter.api.Test
-    void shouldFindSumSalesExample1() {
+      void shouldFindSumSalesExample1() {
         StatsService stats = new StatsService();
         long expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18);
         long[] month = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
